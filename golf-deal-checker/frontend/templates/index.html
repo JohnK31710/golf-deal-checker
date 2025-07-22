@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Deal Evaluator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <h1>Golf Deal Evaluator</h1>
+    <textarea id="listingText" rows="10" cols="60" placeholder="Place Facebook Title + Description Here"></textarea><br>
+    <input id="price" type="number" placeholder="Listing Price ($)" /><br>
+    <button onclick="evaluateDeal()">Evaluate Deal</button>
+    <div id="results"></div>
+</body>
+</html>
